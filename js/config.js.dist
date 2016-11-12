@@ -1,0 +1,5 @@
+'use strict';
+
+var IKNSA_USER_WEBSERVICE_CONFIG = {
+    urlNew: 'http://webservice.iknsa.com/api/user/new',
+}

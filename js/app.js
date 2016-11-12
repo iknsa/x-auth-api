@@ -7,7 +7,7 @@ var IKNSA_USER_WEBSERVICE = {
 
     init: function () {
         if ($('.iknsa-user-webservice').length > 0) {
-            $.get('', function (response) {
+            $.get(IKNSA_USER_WEBSERVICE_CONFIG.urlNew, function (response) {
                 console.log(response);
             }).done(function (response) {
                 console.log('done');
