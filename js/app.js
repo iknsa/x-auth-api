@@ -21,8 +21,6 @@ var IKNSA_USER_WEBSERVICE = {
             ;
         });
 
-        console.log(response);
-
         $(form).attr('action', response.formDetails.form.action);
         $(form).attr('method', response.formDetails.form.method);
 
@@ -47,9 +45,7 @@ var IKNSA_USER_WEBSERVICE = {
 
     generateForm: function (formDetails) {
         $.get('/form.html', function () {
-            console.log('fetching form template');
         }).done(function (response) {
-            console.log('adding form to page');
             $('.iknsa-user-webservice').html(response);
             IKNSA_USER_WEBSERVICE.hydrateFormInfo(formDetails);
         })
@@ -58,14 +54,11 @@ var IKNSA_USER_WEBSERVICE = {
 
     init: function () {
         if ($('.iknsa-user-webservice').length > 0) {
+
             $.get(IKNSA_USER_WEBSERVICE_CONFIG.urlNew, function (response) {
-                console.log(response);
             }).done(function (response) {
-                console.log('done');
                 IKNSA_USER_WEBSERVICE.generateForm(response);
             }).fail(function (response) {
-                console.log('failed');
-                console.log(response);
             })
             ;
         }
