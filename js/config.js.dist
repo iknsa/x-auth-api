@@ -1,5 +1,7 @@
 'use strict';
 
 var IKNSA_USER_WEBSERVICE_CONFIG = {
-    urlNew: 'http://webservice.iknsa.com/api/user/new',
+    apiKey: 'PUBLIC__xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    new: 'http://user.dev/api/user/new/',
+    list: 'http://user.dev/api/user/'
 }
