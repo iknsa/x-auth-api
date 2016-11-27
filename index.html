@@ -11,16 +11,54 @@
     <script src="js/config.js"></script>
 </head>
 <body>
+
 <div class="row">
     <div class="container">
         <div class="jumbotron">
+            <h2>Edit user</h2>
+            <div class="iknsa-user-webservice" data-action="edit"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="jumbotron">
+            <h2>Show user</h2>
+            <div class="iknsa-user-webservice" data-action="show">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <td>Username</td>
+                            <td>Email</td>
+                            <td>Active</td>
+                            <td>Token</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                <button class="btn btn-primary" value="edit" name="edit">Modifier</button>
+                <button class="btn btn-danger" value="delete" name="delete">Supprimer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="container">
+        <div class="jumbotron">
+            <h2>List user</h2>
             <div class="iknsa-user-webservice" data-action="list"></div>
         </div>
     </div>
 </div>
+
 <div class="row">
     <div class="container">
         <div class="jumbotron">
+            <h2>Create user</h2>
             <div class="iknsa-user-webservice" data-action="new"></div>
         </div>
     </div>

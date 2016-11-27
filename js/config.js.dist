@@ -2,6 +2,8 @@
 
 var IKNSA_USER_WEBSERVICE_CONFIG = {
     apiKey: 'PUBLIC__xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+    list: 'http://user.dev/api/user/',
     new: 'http://user.dev/api/user/new/',
-    list: 'http://user.dev/api/user/'
+    show: 'http://user.dev/api/user/show/{token}',
+    edit: 'http://user.dev/api/user/{token}/edit/',
 }
